@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Peacemaker",
+    "version": "67",
+    "description": "Stupid AF",
+  "permissions": ["tabs", "windows", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
